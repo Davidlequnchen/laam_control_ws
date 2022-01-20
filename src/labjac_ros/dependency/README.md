@@ -79,3 +79,10 @@ __Reference__
     >>> d.close()
     ```
 
+### Operations and Functionalities
+
+Command/response mode is generally best for minimum-latency applications such as feedback control.  By latency here we mean the time from when a reading is acquired to when it is available in the host software.  A reading or group of readings can be acquired in times on the order of a millisecond.
+
+#### Reference:
+- [LabJack Datasheet (for U3)](https://labjack.com/support/datasheets/u3)
+- Learn more about low-level functions probided by python labjack library: [LabJackPython documentation](https://labjack.com/support/datasheets/u3/Low_Level_Function_Reference/Low_Level_Functions)

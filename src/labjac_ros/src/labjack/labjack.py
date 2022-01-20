@@ -12,7 +12,7 @@ class LabJack():
         self.setDacCount = 0
         self.go = True
         self.openu3()
-        self.reg = 5000
+        self.reg = 5000 # DAC0, 50002 for DAC2, please check the source code for more information
 
     def load_config(self, filename):
         with open(filename, "r") as ymlfile:
@@ -26,20 +26,20 @@ class LabJack():
         return self.factor
 
     def openu3(self):
-        print 'Opening LabJack...'
+        print ('Opening LabJack...')
         try:
             self.dac = u3.U3()
-            print 'Done'
+            print("Done")
         except:
-            print 'The device may be not connected'
+            print ('The device may be not connected')
 
     def close(self):
-        print 'Closing LabJack...'
+        print ('Closing LabJack...')
         try:
             self.dac.closeu3()
-            print 'Done'
+            print ('Done')
         except:
-            print 'The device could be not closed'
+            print ('The device could be not closed')
 
     def setDac(self):
         # calculate the value to put in the sin
@@ -58,7 +58,7 @@ class LabJack():
     def triangular(self, maxim):
         while(1):
             for k in np.linspace(0, maxim, 10):
-                print k
+                print (k)
                 dacs.output(k)
                 time.sleep(1)
             k = 0
@@ -72,7 +72,8 @@ class LabJack():
         self.setDacCount += 1
 
     def singenerator(self, FREQUENCY, UPDATE_INTERVAL):
-        print "This program will attempt to generate a sine wave with a frequency of %s Hz, updating once every %s seconds." % (FREQUENCY, UPDATE_INTERVAL)
+        print ("This program will attempt to generate a sine wave with a frequency of %s Hz, updating once every %s seconds." 
+                % (FREQUENCY, UPDATE_INTERVAL))
         # Controls how fast the DAC will be updated, in seconds.
         # Points between peaks (pbp)
         pbp = (float(1)/FREQUENCY)/UPDATE_INTERVAL
@@ -94,8 +95,8 @@ class LabJack():
                 self.setDac()
         signal.setitimer(signal.ITIMER_REAL, 0)
 
-        print "# of Updates = %s, # of1 signals = %s" % (dacs.count, dacs.setDacCount)
-        print "The closer the number of updates is to the number of signals, the better your waveform will be."
+        print ("# of Updates = %s, # of1 signals = %s" % (dacs.count, dacs.setDacCount))
+        print ("The closer the number of updates is to the number of signals, the better your waveform will be.")
 
 
 if __name__ == '__main__':
