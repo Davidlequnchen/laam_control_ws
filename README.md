@@ -8,7 +8,7 @@
 
 # Instructions
 To build the workspace:
-- delete build and devel folder:   
+- delete build and devel folder:
    ```
    catkin clean
    ```
@@ -21,7 +21,7 @@ To build the workspace:
 
 ## Parameters Configurations
 - USB camera number: in __camera_monitoring/launch__ folder, change the ```"/dev/video0"``` value in camera_monitoring.launch file, try ```"/dev/video1"``` or other value such as -1,2 to connect to your USB camera device
-- 
+- to be updated
 
 
 ### Reference
