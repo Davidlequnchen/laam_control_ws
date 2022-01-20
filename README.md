@@ -13,11 +13,15 @@ To build the workspace:
    catkin clean
    ```
 - navigate to __src/labjack_ros/dependency__ folder to check the instructions on installation of LabJack related dependent packages
-- navigate to workspace to build
+- Build and Install USB Camera driver: http://wiki.ros.org/usb_cam
+- navigate to workspace to build, __force to build with python3 instead of python2__
    ```
-   catkin make
+   catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
    ```
 
+## Parameters Configurations
+- USB camera number: in __camera_monitoring/launch__ folder, change the ```"/dev/video0"``` value in camera_monitoring.launch file, try ```"/dev/video1"``` or other value such as -1,2 to connect to your USB camera device
+- 
 
 
 ### Reference

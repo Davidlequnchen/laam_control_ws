@@ -53,65 +53,65 @@ CMAKE_BINARY_DIR = /home/chenlequn/laam_control_ws/build
 # Include the progress variables for this target.
 include laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py.dir/progress.make
 
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgStart.py
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgPower.py
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgInfo.py
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgSetpoint.py
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgEmission.py
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgControl.py
-laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgPower.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgStart.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgControl.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgInfo.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgEmission.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgSetpoint.py
+laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py
 
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgStart.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgStart.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG laam_laser_control/MsgStart"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgPower.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgPower.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgPower.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG laam_laser_control/MsgPower"
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgPower.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgPower.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgPower.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG laam_laser_control/MsgPower"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgStart.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgStart.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG laam_laser_control/MsgStart"
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgInfo.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgInfo.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgInfo.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG laam_laser_control/MsgInfo"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgControl.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgControl.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG laam_laser_control/MsgControl"
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgSetpoint.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgSetpoint.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG laam_laser_control/MsgSetpoint"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgInfo.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgInfo.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgInfo.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG laam_laser_control/MsgInfo"
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgEmission.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgEmission.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgEmission.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgEmission.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG laam_laser_control/MsgEmission"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgControl.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgControl.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG laam_laser_control/MsgControl"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgSetpoint.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgSetpoint.py: /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG laam_laser_control/MsgSetpoint"
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg -Ilaam_laser_control:/home/chenlequn/laam_control_ws/src/laam_laser_control/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p laam_laser_control -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg
 
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgStart.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgPower.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgInfo.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgSetpoint.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgEmission.py
-/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgControl.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgPower.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgStart.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgControl.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgInfo.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgEmission.py
+/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgSetpoint.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python msg __init__.py for laam_laser_control"
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg --initpy
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg --initpy
 
 laam_laser_control_generate_messages_py: laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgStart.py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgPower.py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgInfo.py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgSetpoint.py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgEmission.py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/_MsgControl.py
-laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/laam_laser_control/msg/__init__.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgPower.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgStart.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgControl.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgInfo.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgEmission.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/_MsgSetpoint.py
+laam_laser_control_generate_messages_py: /home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/laam_laser_control/msg/__init__.py
 laam_laser_control_generate_messages_py: laam_laser_control/CMakeFiles/laam_laser_control_generate_messages_py.dir/build.make
 
 .PHONY : laam_laser_control_generate_messages_py

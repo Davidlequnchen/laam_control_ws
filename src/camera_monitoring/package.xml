@@ -2,7 +2,7 @@
 <package>
   <name>camera_monitoring</name>
   <version>0.4.0</version>
-  <description>The camera_measures package.</description>
+  <description>The camera_monitoring package.</description>
   <maintainer email="chen1189@e.ntu.edu.sg">Chen Lequn</maintainer>
   <license>NA</license>
 

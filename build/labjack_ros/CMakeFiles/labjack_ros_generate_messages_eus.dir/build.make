@@ -60,11 +60,11 @@ labjack_ros/CMakeFiles/labjack_ros_generate_messages_eus: /home/chenlequn/laam_c
 /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros/msg/MsgLabJack.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros/msg/MsgLabJack.l: /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from labjack_ros/MsgLabJack.msg"
-	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg -Ilabjack_ros:/home/chenlequn/laam_control_ws/src/labjack_ros/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p labjack_ros -o /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros/msg
+	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg -Ilabjack_ros:/home/chenlequn/laam_control_ws/src/labjack_ros/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p labjack_ros -o /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros/msg
 
 /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for labjack_ros"
-	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros labjack_ros std_msgs
+	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros labjack_ros std_msgs
 
 labjack_ros_generate_messages_eus: labjack_ros/CMakeFiles/labjack_ros_generate_messages_eus
 labjack_ros_generate_messages_eus: /home/chenlequn/laam_control_ws/devel/share/roseus/ros/labjack_ros/msg/MsgLabJack.l

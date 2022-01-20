@@ -12,7 +12,7 @@ from laam_laser_control.msg import MsgStart
 from laam_laser_control.msg import MsgEmission                            #20191011
 
 # from camera_tachyon.msg import MsgCalibrate
-from camera_measures.msg import MsgGeometry
+from camera_monitoring.msg import MsgGeometry
 
 from python_qt_binding import loadUi
 from python_qt_binding import QtGui
@@ -28,7 +28,7 @@ from time import sleep
 MANUAL = 0
 AUTOMATIC = 1
 STEP = 2
-path = rospkg.RosPack().get_path('simtech_robot_laser_control')
+path = rospkg.RosPack().get_path('laam_laser_control')
 
 
 class QtControl(QtWidgets.QWidget):
@@ -40,7 +40,6 @@ class QtControl(QtWidgets.QWidget):
         self.btnMode.activated.connect(self.btnModeClicked)
         self.btnAuto.activated.connect(self.btnAutoClicked)
         self.btnControl.clicked.connect(self.btnControlClicked)
-        # self.btnCalibrate.clicked.connect(self.btnCalibrateClicked)
 
         #self.pub_mode = rospy.Publisher(
         #    '/control/mode', MsgMode, queue_size=10)
@@ -48,18 +47,13 @@ class QtControl(QtWidgets.QWidget):
             '/control/parameters', MsgControl, queue_size=10)
 
         self.pub_emission = rospy.Publisher(
-            '/control/emission', MsgEmission, queue_size=10)               #20191011
-        ''' 
-        self.pub_calibrate = rospy.Publisher(
-            '/tachyon/calibrate', MsgCalibrate, queue_size=10)
-        '''
+            '/control/emission', MsgEmission, queue_size=10)               
+        
 
         self.mode = MANUAL
-        # self.msg_mode = MsgMode()
         self.msg_control = MsgControl()
-        # self.msg_calibrate = MsgCalibrate()
-
-        self.msg_emission = MsgEmission()                                  #20191011
+    
+        self.msg_emission = MsgEmission()                                 
 
         self.minor_axis = 0
         self.major_axis = 0
@@ -182,11 +176,6 @@ class QtControl(QtWidgets.QWidget):
         self.pub_emission.publish(self.msg_emission)
 
 
-    '''
-    def btnCalibrateClicked(self):
-        self.msg_calibrate.calibrate = 1
-        self.pub_calibrate.publish(self.msg_calibrate)
-    '''
 
     def cb_geometry(self, msg_geometry):
         self.minor_axis = msg_geometry.minor_axis

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chenlequn/laam_control_ws/build
 include labjack_ros/CMakeFiles/_labjack_ros_generate_messages_check_deps_MsgLabJack.dir/progress.make
 
 labjack_ros/CMakeFiles/_labjack_ros_generate_messages_check_deps_MsgLabJack:
-	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py labjack_ros /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg 
+	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py labjack_ros /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg 
 
 _labjack_ros_generate_messages_check_deps_MsgLabJack: labjack_ros/CMakeFiles/_labjack_ros_generate_messages_check_deps_MsgLabJack
 _labjack_ros_generate_messages_check_deps_MsgLabJack: labjack_ros/CMakeFiles/_labjack_ros_generate_messages_check_deps_MsgLabJack.dir/build.make

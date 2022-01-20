@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rospy
 
-from cladplus_control.msg import MsgPower
+from laam_laser_control.msg import MsgPower
 
 from labjack.labjack import LabJack
 

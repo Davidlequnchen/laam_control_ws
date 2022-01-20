@@ -59,7 +59,7 @@ labjack_ros/CMakeFiles/labjack_ros_generate_messages_nodejs: /home/chenlequn/laa
 /home/chenlequn/laam_control_ws/devel/share/gennodejs/ros/labjack_ros/msg/MsgLabJack.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/chenlequn/laam_control_ws/devel/share/gennodejs/ros/labjack_ros/msg/MsgLabJack.js: /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from labjack_ros/MsgLabJack.msg"
-	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg -Ilabjack_ros:/home/chenlequn/laam_control_ws/src/labjack_ros/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p labjack_ros -o /home/chenlequn/laam_control_ws/devel/share/gennodejs/ros/labjack_ros/msg
+	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg -Ilabjack_ros:/home/chenlequn/laam_control_ws/src/labjack_ros/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p labjack_ros -o /home/chenlequn/laam_control_ws/devel/share/gennodejs/ros/labjack_ros/msg
 
 labjack_ros_generate_messages_nodejs: labjack_ros/CMakeFiles/labjack_ros_generate_messages_nodejs
 labjack_ros_generate_messages_nodejs: /home/chenlequn/laam_control_ws/devel/share/gennodejs/ros/labjack_ros/msg/MsgLabJack.js

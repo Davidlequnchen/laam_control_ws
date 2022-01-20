@@ -8,9 +8,9 @@ from laam_laser_control.msg import MsgPower
 from laam_laser_control.msg import MsgInfo
 from laam_laser_control.msg import MsgStart
 from laam_laser_control.msg import MsgSetpoint
-from camera_measures.msg import MsgGeometry
-from camera_measures.msg import MsgStatus
-# from camera_measures.msg import MsgVelocityStatus
+from camera_monitoring.msg import MsgGeometry
+from camera_monitoring.msg import MsgStatus
+# from camera_monitoring.msg import MsgVelocityStatus
 
 from control.control import Control
 from control.control import PID

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/labjack_ros_generate_messages_py"
-  "/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/labjack_ros/msg/_MsgLabJack.py"
-  "/home/chenlequn/laam_control_ws/devel/lib/python2.7/dist-packages/labjack_ros/msg/__init__.py"
+  "/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/labjack_ros/msg/_MsgLabJack.py"
+  "/home/chenlequn/laam_control_ws/devel/lib/python3/dist-packages/labjack_ros/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

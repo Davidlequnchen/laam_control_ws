@@ -100,16 +100,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::laam_laser_control::MsgInfo_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::laam_laser_control::MsgInfo_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::laam_laser_control::MsgInfo_<ContainerAllocator> >
   : TrueType
   { };
@@ -117,6 +107,16 @@ struct IsMessage< ::laam_laser_control::MsgInfo_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::laam_laser_control::MsgInfo_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::laam_laser_control::MsgInfo_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::laam_laser_control::MsgInfo_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

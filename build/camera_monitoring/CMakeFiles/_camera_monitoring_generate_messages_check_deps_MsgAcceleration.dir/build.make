@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chenlequn/laam_control_ws/build
 include camera_monitoring/CMakeFiles/_camera_monitoring_generate_messages_check_deps_MsgAcceleration.dir/progress.make
 
 camera_monitoring/CMakeFiles/_camera_monitoring_generate_messages_check_deps_MsgAcceleration:
-	cd /home/chenlequn/laam_control_ws/build/camera_monitoring && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py camera_monitoring /home/chenlequn/laam_control_ws/src/camera_monitoring/msg/MsgAcceleration.msg std_msgs/Header
+	cd /home/chenlequn/laam_control_ws/build/camera_monitoring && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py camera_monitoring /home/chenlequn/laam_control_ws/src/camera_monitoring/msg/MsgAcceleration.msg std_msgs/Header
 
 _camera_monitoring_generate_messages_check_deps_MsgAcceleration: camera_monitoring/CMakeFiles/_camera_monitoring_generate_messages_check_deps_MsgAcceleration
 _camera_monitoring_generate_messages_check_deps_MsgAcceleration: camera_monitoring/CMakeFiles/_camera_monitoring_generate_messages_check_deps_MsgAcceleration.dir/build.make

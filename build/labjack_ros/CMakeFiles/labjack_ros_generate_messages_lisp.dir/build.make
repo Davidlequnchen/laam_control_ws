@@ -59,7 +59,7 @@ labjack_ros/CMakeFiles/labjack_ros_generate_messages_lisp: /home/chenlequn/laam_
 /home/chenlequn/laam_control_ws/devel/share/common-lisp/ros/labjack_ros/msg/MsgLabJack.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
 /home/chenlequn/laam_control_ws/devel/share/common-lisp/ros/labjack_ros/msg/MsgLabJack.lisp: /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chenlequn/laam_control_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from labjack_ros/MsgLabJack.msg"
-	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg -Ilabjack_ros:/home/chenlequn/laam_control_ws/src/labjack_ros/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p labjack_ros -o /home/chenlequn/laam_control_ws/devel/share/common-lisp/ros/labjack_ros/msg
+	cd /home/chenlequn/laam_control_ws/build/labjack_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/chenlequn/laam_control_ws/src/labjack_ros/msg/MsgLabJack.msg -Ilabjack_ros:/home/chenlequn/laam_control_ws/src/labjack_ros/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p labjack_ros -o /home/chenlequn/laam_control_ws/devel/share/common-lisp/ros/labjack_ros/msg
 
 labjack_ros_generate_messages_lisp: labjack_ros/CMakeFiles/labjack_ros_generate_messages_lisp
 labjack_ros_generate_messages_lisp: /home/chenlequn/laam_control_ws/devel/share/common-lisp/ros/labjack_ros/msg/MsgLabJack.lisp

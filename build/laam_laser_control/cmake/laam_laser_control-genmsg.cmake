@@ -17,14 +17,19 @@ add_custom_target(laam_laser_control_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" "std_msgs/Header"
+)
+
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" NAME_WE)
 add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" ""
 )
 
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
 add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" ""
 )
 
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" NAME_WE)
@@ -32,19 +37,14 @@ add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
-add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" ""
-)
-
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" NAME_WE)
 add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" ""
 )
 
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
 add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "laam_laser_control" "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" ""
 )
 
 #
@@ -54,15 +54,21 @@ add_custom_target(_laam_laser_control_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(laam_laser_control
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
+)
+_generate_msg_cpp(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_cpp(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_cpp(laam_laser_control
@@ -72,19 +78,13 @@ _generate_msg_cpp(laam_laser_control
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_cpp(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
-)
-_generate_msg_cpp(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_cpp(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/laam_laser_control
@@ -104,17 +104,17 @@ add_custom_target(laam_laser_control_generate_messages_cpp
 add_dependencies(laam_laser_control_generate_messages laam_laser_control_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
-add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_cpp _laam_laser_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -127,15 +127,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS laam_laser_control_generate_message
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(laam_laser_control
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
+)
+_generate_msg_eus(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_eus(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_eus(laam_laser_control
@@ -145,19 +151,13 @@ _generate_msg_eus(laam_laser_control
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_eus(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
-)
-_generate_msg_eus(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_eus(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/laam_laser_control
@@ -177,17 +177,17 @@ add_custom_target(laam_laser_control_generate_messages_eus
 add_dependencies(laam_laser_control_generate_messages laam_laser_control_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
-add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_eus _laam_laser_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -200,15 +200,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS laam_laser_control_generate_message
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(laam_laser_control
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
+)
+_generate_msg_lisp(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_lisp(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_lisp(laam_laser_control
@@ -218,19 +224,13 @@ _generate_msg_lisp(laam_laser_control
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_lisp(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
-)
-_generate_msg_lisp(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_lisp(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/laam_laser_control
@@ -250,17 +250,17 @@ add_custom_target(laam_laser_control_generate_messages_lisp
 add_dependencies(laam_laser_control_generate_messages laam_laser_control_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
-add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_lisp _laam_laser_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -273,15 +273,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS laam_laser_control_generate_message
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(laam_laser_control
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
+)
+_generate_msg_nodejs(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_nodejs(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_nodejs(laam_laser_control
@@ -291,19 +297,13 @@ _generate_msg_nodejs(laam_laser_control
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_nodejs(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
-)
-_generate_msg_nodejs(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_nodejs(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/laam_laser_control
@@ -323,17 +323,17 @@ add_custom_target(laam_laser_control_generate_messages_nodejs
 add_dependencies(laam_laser_control_generate_messages laam_laser_control_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
-add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_nodejs _laam_laser_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -346,15 +346,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS laam_laser_control_generate_message
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(laam_laser_control
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
+)
+_generate_msg_py(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_py(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_py(laam_laser_control
@@ -364,19 +370,13 @@ _generate_msg_py(laam_laser_control
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_py(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
-)
-_generate_msg_py(laam_laser_control
   "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
 )
 _generate_msg_py(laam_laser_control
-  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg"
+  "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control
@@ -396,17 +396,17 @@ add_custom_target(laam_laser_control_generate_messages_py
 add_dependencies(laam_laser_control_generate_messages laam_laser_control_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
-add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg" NAME_WE)
+get_filename_component(_filename "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg" NAME_WE)
 add_dependencies(laam_laser_control_generate_messages_py _laam_laser_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -463,7 +463,7 @@ if(TARGET std_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control)
-  install(CODE "execute_process(COMMAND \"/usr/bin/python2\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control\")")
+  install(CODE "execute_process(COMMAND \"/usr/bin/python3\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control\")")
   # install generated code
   install(
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/laam_laser_control

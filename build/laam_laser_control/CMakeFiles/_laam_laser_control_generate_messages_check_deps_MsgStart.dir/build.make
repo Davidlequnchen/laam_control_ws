@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chenlequn/laam_control_ws/build
 include laam_laser_control/CMakeFiles/_laam_laser_control_generate_messages_check_deps_MsgStart.dir/progress.make
 
 laam_laser_control/CMakeFiles/_laam_laser_control_generate_messages_check_deps_MsgStart:
-	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py laam_laser_control /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg 
+	cd /home/chenlequn/laam_control_ws/build/laam_laser_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py laam_laser_control /home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg 
 
 _laam_laser_control_generate_messages_check_deps_MsgStart: laam_laser_control/CMakeFiles/_laam_laser_control_generate_messages_check_deps_MsgStart
 _laam_laser_control_generate_messages_check_deps_MsgStart: laam_laser_control/CMakeFiles/_laam_laser_control_generate_messages_check_deps_MsgStart.dir/build.make
