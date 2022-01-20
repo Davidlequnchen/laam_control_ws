@@ -1,15 +1,31 @@
-# laam_control_ws
+# Closed-loop feedback control for laser aided additive manufacturing (LAAM) process
  
-### build platform
+
+###  running platform
 - Ubuntu 18.04
 - ROS Melodic
 - Python3 
 
+# Instructions
+To build the workspace:
+- delete build and devel folder:   
+   ```
+   catkin clean
+   ```
+- navigate to __src/labjack_ros/dependency__ folder to check the instructions on installation of LabJack related dependent packages
+- navigate to workspace to build
+   ```
+   catkin make
+   ```
 
 
 
 ### Reference
-This part of code is write on top of __cladplus_labjack__ from OpenLMD.
-- [cladplus](https://github.com/openlmd/cladplus/tree/master/cladplus_labjack)
-- [OpenLMD](https://github.com/openlmd)
-- [OpenLMD paper](https://www.sciencedirect.com/science/article/abs/pii/S0736584517303770)
+- Part of the code is written on top of ROS packages from OpenLMD.
+
+  - [OpenLMD](https://github.com/openlmd)
+  - [OpenLMD publications](https://www.sciencedirect.com/science/article/abs/pii/S0736584517303770)
+
+- Data-driven adaptive control for LAAM, from SIMTech
+  - [Original paper](https://www.mdpi.com/2076-3417/10/22/7967)
+

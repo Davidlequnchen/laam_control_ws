@@ -1,0 +1,19 @@
+(cl:defpackage camera_monitoring-msg
+  (:use )
+  (:export
+   "<MSGACCELERATION>"
+   "MSGACCELERATION"
+   "<MSGGEOMETRY>"
+   "MSGGEOMETRY"
+   "<MSGPOSITION>"
+   "MSGPOSITION"
+   "<MSGSTATUS>"
+   "MSGSTATUS"
+   "<MSGTWIST>"
+   "MSGTWIST"
+   "<MSGVELOCITY>"
+   "MSGVELOCITY"
+   "<MSGVELOCITYSTATUS>"
+   "MSGVELOCITYSTATUS"
+  ))
+
