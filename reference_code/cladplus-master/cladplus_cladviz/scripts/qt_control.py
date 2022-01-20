@@ -1,1 +1,0 @@
-../../cladplus_control/scripts/qt_control.py
