@@ -8,9 +8,16 @@ If you find our work useful in your research, please cite our paper:
 
 [Publication](https://www.mdpi.com/2076-3417/10/22/7967)
 
-`
-Chen L, Yao X, Chew Y, Weng F, Moon SK, Bi G. Data-Driven Adaptive Control for Laser-Based Additive Manufacturing with Automatic Controller Tuning. Applied Sciences. 2020; 10(22):7967. https://doi.org/10.3390/app10227967、
-`
+<style>
+  code {
+    white-space : pre-wrap !important;
+    /* word-break: break-word; */
+  }
+</style>
+
+```code
+Chen L, Yao X, Chew Y, Weng F, Moon SK, Bi G. Data-Driven Adaptive Control for Laser-Based Additive Manufacturing with Automatic Controller Tuning. Applied Sciences. 2020; 10(22):7967. https://doi.org/10.3390/app10227967
+```
 
 ### System requirements
 ##### master branch
