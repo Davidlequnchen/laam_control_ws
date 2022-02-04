@@ -1,8 +1,0 @@
-prefix=/home/chenlequn/laam_control_ws/devel
-
-Name: labjack_ros
-Description: Description of labjack_ros
-Version: 0.3.0
-Cflags: -I/home/chenlequn/laam_control_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

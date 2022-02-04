@@ -1,8 +1,0 @@
-prefix=/home/chenlequn/laam_control_ws/install
-
-Name: laam_laser_control
-Description: Description of laam_laser_control
-Version: 0.4.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

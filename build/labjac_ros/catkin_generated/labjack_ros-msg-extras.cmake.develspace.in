@@ -1,2 +1,0 @@
-set(labjack_ros_MESSAGE_FILES "/home/chenlequn/laam_control_ws/src/labjac_ros/msg/MsgLabJack.msg")
-set(labjack_ros_SERVICE_FILES "")

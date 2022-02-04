@@ -1,2 +1,0 @@
-set(laam_laser_control_MESSAGE_FILES "/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgPower.msg;/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgStart.msg;/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgControl.msg;/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgInfo.msg;/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgEmission.msg;/home/chenlequn/laam_control_ws/src/laam_laser_control/msg/MsgSetpoint.msg")
-set(laam_laser_control_SERVICE_FILES "")

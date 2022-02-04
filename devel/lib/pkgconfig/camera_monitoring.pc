@@ -1,8 +1,0 @@
-prefix=/home/chenlequn/laam_control_ws/devel
-
-Name: camera_monitoring
-Description: Description of camera_monitoring
-Version: 0.4.0
-Cflags: -I/home/chenlequn/laam_control_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

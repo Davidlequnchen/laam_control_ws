@@ -1,10 +1,27 @@
 # Closed-loop feedback control for laser aided additive manufacturing (LAAM) process
- 
+## Introduction
+This is the code repository for paper entitled "Data-Driven Adaptive Control for Laser-Based Additive Manufacturing with Automatic Controller Tuning"
 
-###  running platform
+
+#### Citation
+If you find our work useful in your research, please cite our paper:
+
+[Publication](https://www.mdpi.com/2076-3417/10/22/7967)
+```text
+Chen L, Yao X, Chew Y, Weng F, Moon SK, Bi G. Data-Driven Adaptive Control for Laser-Based Additive Manufacturing with Automatic Controller Tuning. Applied Sciences. 2020; 10(22):7967. https://doi.org/10.3390/app10227967
+```
+
+### System requirements
+##### master branch
 - Ubuntu 18.04
 - ROS Melodic
 - Python3 
+  
+##### ROS2-foxy branch
+- to be updated 
+##### Noetic branch
+- to be updated 
+
 
 # Instructions
 To build the workspace:
@@ -26,10 +43,10 @@ To build the workspace:
 
 ### Reference
 - Part of the code is written on top of ROS packages from OpenLMD.
-
   - [OpenLMD](https://github.com/openlmd)
   - [OpenLMD publications](https://www.sciencedirect.com/science/article/abs/pii/S0736584517303770)
 
-- Data-driven adaptive control for LAAM, from SIMTech
-  - [Original paper](https://www.mdpi.com/2076-3417/10/22/7967)
+  
+- Other related projects from our research group on process monitoring and control for LAAM:
+  - [Rapid surface defect identification for additive manufacturing with in-situ point cloud processing and machine learning](https://www.tandfonline.com/doi/abs/10.1080/17452759.2020.1832695)
 

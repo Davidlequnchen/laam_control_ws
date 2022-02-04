@@ -2,7 +2,6 @@
 import rospy
 
 from camera_monitoring.msg import MsgGeometry
-from camera_monitoring.msg import MsgVelocity
 from camera_monitoring.msg import MsgStatus
 
 """
@@ -49,7 +48,7 @@ class NdSupervisor():
         # power = rospy.get_param('/control/power')
 
         self.msg_status.laser_on = laser_on
-        self.msg_status.power = power
+        # self.msg_status.power = power
 
 
 

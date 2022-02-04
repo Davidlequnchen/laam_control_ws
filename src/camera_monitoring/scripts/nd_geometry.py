@@ -9,7 +9,7 @@ from cv_bridge import CvBridge, CvBridgeError
 from camera_measures.msg import MsgGeometry
 
 from measures.geometry import Geometry
-from measures.projection import Projection
+# from measures.projection import Projection
 
 # config_file = "LaserControl.yaml"
 
@@ -67,8 +67,6 @@ class NdGeometry():
             if msg_image.encoding == 'rgb8':
                 frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY) # convert the image into gray scale pixel value between (0, 255)
                 
-           
-            
             # get the center, axis and angle by calling the funtion find_geomerty
             center, axis, angle = self.geometry.find_geometry(frame)
             
@@ -79,7 +77,6 @@ class NdGeometry():
             frame = self.geometry.mask(frame)
             frame = self.geometry.binarize(frame)
             
-           
             # circle = center_circle, diameter, radius
             ellipse = center, axis, angle 
             
@@ -92,7 +89,6 @@ class NdGeometry():
             self.moving_average(axis[1]) # minor axis, moving average
             # self.moving_average(diameter) # diameter of circle as melt pool width
             
-    
             cv2.namedWindow('geometry_ellipse', cv2.WINDOW_NORMAL)
             cv2.imshow('geometry_ellipse',frame_ellipse)
             
@@ -137,8 +133,6 @@ class NdGeometry():
         else:
             self.minor_axis_list.append(minor_axis) # append current minor_axis to the end of the list
             
-
-
 
 
 
