@@ -3,17 +3,40 @@ import math
 import signal
 
 import u3
-
+# from ljTickDacSimple import LJTickDAC
+from labjack.ljTickDacSimple import LJTickDAC
 
 class LabJack():
+    """Updates DACA and DACB on a LJTick-DAC connected to a U3, U6 or UE9."""
+    EEPROM_ADDRESS = 0x50
+    DAC_ADDRESS = 0x12
+
     def __init__(self):
         self.power_factor(0, 1500)
         self.count = 0
         self.setDacCount = 0
         self.go = True
-        self.openu3()
+        # self.openu3()
         self.reg = 5000 # DAC0, 50002 for DAC2, please check the source code for more information
 
+        self.dev = u3.U3()  # Typical way to open a first found U3
+
+        self.dev.getCalibrationData()
+
+        # Set LJTick-DAC voltages
+        if self.dev.devType == 3:
+            # For the U3, LJTick-DAC connected to FIO4 and FIO5.
+            dioPin = 4
+            # Configure FIO0 to FIO4 as analog inputs, and FIO04 to FIO7 as digital I/O.
+            self.dev.configIO(FIOAnalog=0x0F)
+        else:
+            # For the U6 and UE9, LJTick-DAC connected to FIO0 and FIO1.
+            dioPin = 0
+        self.tdac = LJTickDAC(self.dev, dioPin)
+       
+
+       
+        
     def load_config(self, filename):
         with open(filename, "r") as ymlfile:
             cfg = yaml.load(ymlfile)
@@ -22,7 +45,8 @@ class LabJack():
         self.power_factor(pwr_min, pwr_max)
 
     def power_factor(self, pwr_min, pwr_max):
-        self.factor = 5.0 / (pwr_max - pwr_min)
+        # self.factor = 5.0 / (pwr_max - pwr_min)
+        self.factor = 10.0 / (pwr_max - pwr_min)
         return self.factor
 
     def openu3(self):
@@ -53,7 +77,12 @@ class LabJack():
         self.go = False
 
     def output(self, value):
-        self.dac.writeRegister(self.reg, value)
+        # self.dac.writeRegister(self.reg, value)
+        dacA = 1
+        dacB = value
+        self.tdac.update(dacA, dacB)
+        print("DACA and DACB set to %.5f V and %.5f V" % (dacA, dacB))
+
 
     def triangular(self, maxim):
         while(1):

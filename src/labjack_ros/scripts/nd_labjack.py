@@ -22,7 +22,7 @@ class NdLabjack():
         rospy.spin()
 
     def cb_power(self, msg_power):
-        self.labjack.reg = 5000
+        self.labjack.reg = 5000 ## for DAC0
         output = self.labjack.factor * msg_power.value
         rospy.loginfo("Power: %.2f, Output: %.2f", msg_power.value, output)
         self.labjack.output(output)

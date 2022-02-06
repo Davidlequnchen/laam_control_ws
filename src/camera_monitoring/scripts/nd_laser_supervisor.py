@@ -42,7 +42,7 @@ class NdSupervisor():
         
         if msg_geometry.minor_axis > 30:
             laser_on = True
-            power = rospy.get_param('/control/power')
+            # power = rospy.get_param('/control/power')
         
         # laser_on = True
         # power = rospy.get_param('/control/power')
