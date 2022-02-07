@@ -3,7 +3,7 @@
   <arg name="sim" default="false" />
 
   <!-- define the powder, process, material parameters -->
-  <rosparam command="load" file="$(find laam_laser_control)/config/params.yaml" />
+  <!-- <rosparam command="load" file="$(find laam_laser_control)/config/params.yaml" /> -->
 
   <param name="/use_sim_time" value="$(arg sim)" />
   

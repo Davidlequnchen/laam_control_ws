@@ -2,6 +2,11 @@
 ## Introduction
 This is the code repository for paper entitled "Data-Driven Adaptive Control for Laser-Based Additive Manufacturing with Automatic Controller Tuning"
 
+![](./src/doc/System_integration_1.jpg)
+
+![](./src/doc/Adaptive_PID_VRFT.png?raw=true)
+
+<!-- ![](./src/doc/fina_revision_figure8.png?raw=true) -->
 
 #### Citation
 If you find our work useful in your research, please cite our paper:
