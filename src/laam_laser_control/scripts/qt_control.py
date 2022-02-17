@@ -82,8 +82,8 @@ class QtControl(QtWidgets.QWidget):
         self.tmrInfo.start(500)
 
         self.setParameters(rospy.get_param('/control_parameters/pid_parameters'))
-        self.setStepParameters(rospy.get_param('/control_parameters/step'))
-        self.setManualParameters(rospy.get_param('/control_parameters/manual'))
+        # self.setStepParameters(rospy.get_param('/control_parameters/step'))
+        # self.setManualParameters(rospy.get_param('/control_parameters/manual'))
         self.setAutoParameters(rospy.get_param('/control_parameters/automatic'))
         self.btnControlClicked()
 
@@ -99,21 +99,21 @@ class QtControl(QtWidgets.QWidget):
                   'Kp': self.sbKp.value()}
         return params
 
-    def setStepParameters(self, params):
-        self.sbPower_2.setValue(params['power'])
-        self.sbTime.setValue(params['trigger'])
+    # def setStepParameters(self, params):
+    #     self.sbPower_2.setValue(params['power'])
+    #     self.sbTime.setValue(params['trigger'])
 
-    def getStepParameters(self):
-        params = {'power': self.sbPower_2.value(),
-                  'trigger': self.sbTime.value()}
-        return params
+    # def getStepParameters(self):
+    #     params = {'power': self.sbPower_2.value(),
+    #               'trigger': self.sbTime.value()}
+    #     return params
 
-    def setManualParameters(self, params):
-        self.sbPower.setValue(params['power'])
+    # def setManualParameters(self, params):
+    #     self.sbPower.setValue(params['power'])
 
-    def getManualParameters(self):
-        params = {'power': self.sbPower.value()}
-        return params
+    # def getManualParameters(self):
+    #     params = {'power': self.sbPower.value()}
+    #     return params
 
     def setAutoParameters(self, params):
         self.sbWidth.setValue(params['width'])
@@ -160,11 +160,11 @@ class QtControl(QtWidgets.QWidget):
         param = self.getParameters()
         rospy.set_param('/control_parameters/pid_parameters', param)
 
-        step = self.getStepParameters()
-        rospy.set_param('/control_parameters/step', step)
+        # step = self.getStepParameters()
+        # rospy.set_param('/control_parameters/step', step)
 
-        manual = self.getManualParameters()
-        rospy.set_param('/control_parameters/manual', manual)
+        # manual = self.getManualParameters()
+        # rospy.set_param('/control_parameters/manual', manual)
 
         auto = self.getAutoParameters()
         rospy.set_param('/control_parameters/automatic', auto)
