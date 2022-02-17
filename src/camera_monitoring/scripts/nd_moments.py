@@ -6,11 +6,11 @@ import rospkg
 
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
-from camera_measures.msg import MsgGeometry
+from camera_monitoring.msg import MsgGeometry
 
-from measures.moments import Moments
-from measures.projection import Projection
-from measures.geometry import Geometry
+from monitoring.moments import Moments
+from monitoring.projection import Projection
+from monitoring.geometry import Geometry
 
 class NdMoments():
     def __init__(self):
@@ -27,7 +27,7 @@ class NdMoments():
         self.msg_geo = MsgGeometry()
 
         threshold = rospy.get_param('~threshold', 127)
-        path = rospkg.RosPack().get_path('camera_measures')
+        path = rospkg.RosPack().get_path('camera_monitoring')
         '''
         config = rospy.get_param(
             '~config', os.path.join(path, 'config', 'tachyon.yaml'))

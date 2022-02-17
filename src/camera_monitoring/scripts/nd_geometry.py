@@ -3,13 +3,14 @@ import os
 import cv2
 import rospy
 import rospkg
+import numpy as np
 
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
-from camera_measures.msg import MsgGeometry
+from camera_monitoring.msg import MsgGeometry
 
-from measures.geometry import Geometry
-# from measures.projection import Projection
+from monitoring.geometry import Geometry
+# from monitoring.projection import Projection
 
 # config_file = "LaserControl.yaml"
 
@@ -34,7 +35,7 @@ class NdGeometry():
         
         # set defult threshold value that distinguish balck and white
         threshold = rospy.get_param('~threshold', 127)
-        # path = rospkg.RosPack().get_path('camera_measures')
+        path = rospkg.RosPack().get_path('camera_monitoring')
         '''
         config = rospy.get_param(
             '~config', os.path.join(path, 'config', 'tachyon.yaml'))
@@ -63,6 +64,7 @@ class NdGeometry():
     def cb_image(self, msg_image):
         try:
             stamp = msg_image.header.stamp
+            # im = np.frombuffer(image_data.data, dtype=np.uint8).reshape(image_data.height, image_data.width, -1) # convert to numpy
             frame = self.bridge.imgmsg_to_cv2(msg_image) # convert the ros image to OpenCV image for processing
             if msg_image.encoding == 'rgb8':
                 frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY) # convert the image into gray scale pixel value between (0, 255)

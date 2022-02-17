@@ -37,7 +37,10 @@ To build the workspace:
    ```
 - navigate to __src/labjack_ros/dependency__ folder to check the instructions on installation of LabJack related dependent packages
 - Build and Install USB Camera driver: http://wiki.ros.org/usb_cam
-- navigate to workspace to build, __force to build with python3 instead of python2__
+- Build and install vision-opencv package: http://wiki.ros.org/vision_opencv
+- Note that vision-opencv package can only be used with python2 (in meldoic), not python3
+- Navigate to workspace folder, Build the whole workspace with default setting: ```catkin_make```
+- Navigate to workspace to build, __force to build with python3 instead of python2__
    ```
    catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
    ```
