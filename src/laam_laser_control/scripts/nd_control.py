@@ -102,6 +102,8 @@ class NdControl():
         self.setPowerParameters(rospy.get_param('/control_parameters/power'))
         self.control.pid.set_limits(self.power_min, self.power_max)
         self.control.pid.set_setpoint(self.setpoint)
+
+        self.power = rospy.get_param('/control_parameters/manual')['power']
         
         # timer_reduce_power = Timer_thread(5,self.reduce_power_level) # wait 30s to execute function once 
         # timer_reduce_power.start() # start the thread
@@ -134,15 +136,15 @@ class NdControl():
         self.power_min = params['min']
         self.power_max = params['max']
 
-    def setStepParameters(self, params):
-        self.power_step = params['power']
-        self.trigger = params['trigger']
+    # def setStepParameters(self, params):
+    #     self.power_step = params['power']
+    #     self.trigger = params['trigger']
 
     def updateParameters(self):
         # get the ros parameter, which is set from 'control_parameters.yaml' file
         self.setParameters(rospy.get_param('/control_parameters/pid_parameters')) 
-        self.setStepParameters(rospy.get_param('/control_parameters/step'))
-        self.setManualParameters(rospy.get_param('/control_parameters/manual'))
+        # self.setStepParameters(rospy.get_param('/control_parameters/step'))
+        # self.setManualParameters(rospy.get_param('/control_parameters/manual'))
         self.setAutoParameters(rospy.get_param('/control_parameters/automatic'))
 
     def cb_control(self, msg_control):
@@ -167,14 +169,14 @@ class NdControl():
     def cb_geometry(self, msg_geo):
         stamp = msg_geo.header.stamp
         time = stamp.to_sec()
-        if self.mode == MANUAL:
-            self.setFirstPowerValue = True
-            value = self.manual(self.power)
-        elif self.mode == AUTOMATIC:
+        # if self.mode == MANUAL:
+        #     self.setFirstPowerValue = True
+        #     # value = self.manual(self.power)
+        # if self.mode == AUTOMATIC:
             # value = self.automatic(msg_geo.minor_axis, time)
-            value = self.automatic(msg_geo.minor_axis_average, time)
-        elif self.mode == STEP:
-            value = self.step(time)
+        value = self.automatic(msg_geo.minor_axis_average, time)
+        # elif self.mode == STEP:
+        #     # value = self.step(time)
         value = self.range(value)
         # value = self.cooling(msg_geo.minor_axis, value) 
         self.msg_power.header.stamp = stamp
