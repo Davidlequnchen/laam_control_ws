@@ -69,13 +69,6 @@ To build the workspace:
    roslaunch camera_monitoring.launch
    ```
 
-### Some recommendations for future development:
-Currently, our implementation using Python is just a "proof-of-concept" implementation. To further improve the code:
-  - Upgrade to ROS Noetic/ROS2 foxy, and replace the Python image processing Code to C++. 
-  - Actually, OpenCV ROS apps provides several packages for image processing, which uses C++ and is fast. But it still in the development stage: http://wiki.ros.org/opencv_apps.
-  - Increase Camera sampling rate. Enable faster response of the closed-loop controller. 
-
-
 ### Reference
 - Part of the code is written on top of ROS packages from OpenLMD.
   - [OpenLMD](https://github.com/openlmd)
