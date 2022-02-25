@@ -22,7 +22,10 @@ If you find our work useful in your research, please cite our paper:
 - Ubuntu 18.04
 - ROS Melodic
 - Python3 
-  
+Instructions on ROS installation:
+http://wiki.ros.org/melodic/Installation/Ubuntu
+We recommend to install ROS on Ubuntu 18 system (not on virtual machine), but the code should work fine on Windows or Virtual enviornment for testing. 
+
 ##### ROS2-foxy branch
 - to be updated 
 ##### Noetic branch
@@ -68,7 +71,7 @@ To build the workspace:
 ### Some recommendations for future development:
 Currently, our implementation using Python is just a "proof-of-concept" implementation. To further improve the code:
   - Upgrade to ROS Noetic/ROS2 foxy, and replace the Python image processing Code to C++. 
-  - Actually, OpenCV ROS apps provides several packages for image processing, which uses C++ and is fast. But it still under development stage: http://wiki.ros.org/opencv_apps.
+  - Actually, OpenCV ROS apps provides several packages for image processing, which uses C++ and is fast. But it still in the development stage: http://wiki.ros.org/opencv_apps.
   - Increase Camera sampling rate. Enable faster response of the closed-loop controller. 
 
 
