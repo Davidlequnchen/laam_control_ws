@@ -47,7 +47,29 @@ To build the workspace:
 
 ## Parameters Configurations
 - USB camera number: in __camera_monitoring/launch__ folder, change the ```"/dev/video0"``` value in camera_monitoring.launch file, try ```"/dev/video1"``` or other value such as -1,2 to connect to your USB camera device
-- to be updated
+- Define customized parameters such as min and max power range, and setpoint of melt pool width in: `~/laam_control_ws/src/laam_laser_control/config/control_parameters.yaml`
+- Be aware of the code in __~/laam_control_ws/src/laam_laser_control/src/control/control.py__, which implements the actual PID control algorithm. There are several details needs to be addressed.
+
+## Running the program
+- To launch the data-driven PID controller (the whole program):
+  navigate to `laam_laser_control/launch` folder and execute __vrft_adaptive_autocontrol.launch__ file
+   ```
+   cd ~/laam_control_ws/src/laam_laser_control/launch
+   roslaunch vrft_adaptive_autocontrol.launch
+   ```
+
+- To test the usb camera with in-situ image processing functionalities:
+  navigate to `camera_monitoring/launch` folder and execute __camera_monitoring.launch__ file
+   ```
+   cd ~/laam_control_ws/src/camera_monitoring/launch
+   roslaunch camera_monitoring.launch
+   ```
+
+### Some recommendations for future development:
+Currently, our implementation using Python is just a "proof-of-concept" implementation. To further improve the code:
+  - Upgrade to ROS Noetic/ROS2 foxy, and replace the Python image processing Code to C++. 
+  - Actually, OpenCV ROS apps provides several packages for image processing, which uses C++ and is fast. But it still under development stage: http://wiki.ros.org/opencv_apps.
+  - Increase Camera sampling rate. Enable faster response of the closed-loop controller. 
 
 
 ### Reference
