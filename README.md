@@ -21,7 +21,8 @@ If you find our work useful in your research, please cite our paper:
 ##### master branch
 - Ubuntu 18.04
 - ROS Melodic
-- Python3 
+- Python3
+   
 Instructions on ROS installation:
 http://wiki.ros.org/melodic/Installation/Ubuntu
 We recommend to install ROS on Ubuntu 18 system (not on virtual machine), but the code should work fine on Windows or Virtual enviornment for testing. 
